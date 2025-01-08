@@ -1,5 +1,6 @@
 body {
-    background-image: url("https://shorturl.at/jpsCG");
+    background: rgb(33,4,4);
+    background: linear-gradient(360deg, rgba(33,4,4,1) 0%, rgba(25,7,5,1) 17%, rgba(54,6,15,1) 47%, rgba(45,5,11,1) 58%, rgba(31,4,4,1) 82%, rgba(62,9,9,1) 100%);
     overflow-x: hidden;
     margin: 0;
     text-align: center;

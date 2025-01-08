@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VALORANT: Riot Games</title>
+    <title>VALORANT Demo Site</title>
     <link rel="icon" type="image/x-icon" href="https://shorturl.at/cnpBV">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 
     <style>
         .spacing {
-            margin: 150px;
+            margin: 100px;
         }
     </style>
 
@@ -27,60 +27,75 @@
     <div class = ".container-fluid">
 
         <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <img id="scrollTopImage" src="https://shorturl.at/mtyY2" alt="topArrow">
+            <img id="scrollTopImage" src="main-page-img/up.png" alt="topArrow">
         </button>
 
-        <nav class="navbar navbar-expand-lg custom-navbar">
-            <a class="navbar-brand" href="index.html">
-                <img class="nav-vlr-icon" src = "main-page-img/vlr-logo.png" alt = "vlr-icon">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <div class="left-section">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="nav-vlr-icon" src = "main-page-img/vlr-logo.png" alt = "vlr-icon">
+                    </a>
+                </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#game-info">Game info</a>
-                    </li>
+                <div class="middle-section">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#game-info">Game info</a>
+                            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#news">News</a>
-                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#news">News</a>
+                            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#agents">Agents</a>
-                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#agents">Agents</a>
+                            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="maps/maps.html" target="_blank">Maps</a>
-                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="maps/maps.html" target="_blank">Maps</a>
+                            </li>
 
-                    <li class="nav-item dropdown dropend">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Socials
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="https://t.me/hekxo" target="_blank" style="font-weight: bold; font-size: larger">
-                                <img class = "link-img" src = "main-page-img/link.png" alt = "link-img">Telegram
-                            </a></li>
-                            <li><a class="dropdown-item" href="https://x.com/Hekxo1?t=N6TuFKjz15_deMxJsSu5Hw&s=09" target="_blank" style="font-weight: bold; font-size: larger">
-                                <img class = "link-img" src = "main-page-img/link.png" alt = "link-img">Twitter
-                            </a></li>
-                            <li><a class="dropdown-item" href="https://vk.com/hekxo" target="_blank" style="font-weight: bold; font-size: larger">
-                                <img class = "link-img" src = "main-page-img/link.png" alt = "link-img">VK
-                            </a></li>
+                            <li class="nav-item dropdown dropend">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Socials
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="https://t.me/hekxo" target="_blank" style="font-weight: bold; font-size: larger">
+                                            <p class="socials-name">
+                                                Telegram
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://x.com/Hekxo1?t=N6TuFKjz15_deMxJsSu5Hw&s=09" target="_blank" style="font-weight: bold; font-size: larger">
+                                            <p class="socials-name">
+                                                Twitter
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://vk.com/hekxo" target="_blank" style="font-weight: bold; font-size: larger">
+                                            <p class="socials-name">
+                                                VK
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
+                    </div>
+                </div>
 
-                    <li class="nav-item-custom">
-                        <a class="nav-link" href="register-page/registration.html" target="_blank">
-                            <img id="register-icon" src="https://static.vecteezy.com/system/resources/thumbnails/014/441/317/small/account-login-icon-3d-design-for-application-and-website-presentation-png.png" alt="reg-icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="right-section">
+                    <a class="nav-link" href="register-page/registration.html" target="_blank">
+                        <img id="login-icon" src="main-page-img/sign-in-alt.png" alt="reg-icon">
+                    </a>
+                </div>
+            </nav>
+        </header>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -114,26 +129,28 @@
         <div class="container-fluid">
             <div class="row justify-content-md-center">
                 <h1 class="display-6">ABOUT THE GAME:</h1>
-                <div class="col-12 col-md-12 col-lg-8" style="padding: 5%">
-                    <img id="game-info" class = "vlr-image" src="main-page-img/main-img.png" alt="vlr-img">
-                </div>
+                <div class="game-info-container">
+                    <div class="col-12 col-md-12 col-lg-8" style="padding: 5%">
+                        <img id="game-info" class = "vlr-image" src="main-page-img/main-img.png" alt="vlr-img">
+                    </div>
 
-                <div class="col-12 col-md-12 col-lg-4" style="padding: 5%">
-                    <p class="vlr-info">
-                        VALORANT is a popular
-                        free-to-play tactical
-                        first-person shooter (FPS)
-                        video game developed
-                        and published by
-                        Riot Games.
-                        Valorant combines
-                        elements of traditional
-                        FPS gameplay with unique
-                        character abilities
-                        inspired by hero-based
-                        shooters like Overwatch
-                        and hero shooters.
-                    </p>
+                    <div class="col-12 col-md-12 col-lg-4" style="padding: 5%">
+                        <p class="vlr-info">
+                            VALORANT is a popular
+                            free-to-play tactical
+                            first-person shooter (FPS)
+                            video game developed
+                            and published by
+                            Riot Games.
+                            Valorant combines
+                            elements of traditional
+                            FPS gameplay with unique
+                            character abilities
+                            inspired by hero-based
+                            shooters like Overwatch
+                            and hero shooters.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="col-12">
@@ -154,7 +171,7 @@
         <div class="container-fluid">
             <div class="row justify-content-md-center">
                 <div class="col-12" style="padding-right: 5%; padding-left: 5%">
-                    <div id="myDIV" class="header">
+                    <div id="myDIV" class="goals-header">
                         <h2 class="header-title">Your daily goals:</h2>
                         <label for="myInput"></label><input type="text" id="myInput" placeholder="Title...">
                         <span onclick="newElement()" class="addBtn">Add</span>
@@ -190,7 +207,7 @@
                                 Peel back the KINGDOM curtain for a look at Sunset: a vibrant new map set right in Gekko’s stomping grounds. Play it soon!
                             </p>
                             <button id="fullscreen-button1" type="button" class="btn btn-danger">
-                                WATCH<img class="play-icon" src="https://shorturl.at/bty56" alt="play-icon">
+                                <a class="card-link" href="https://www.youtube.com/watch?v=kmfok5MtWkI">WATCH</a>
                             </button>
                         </div>
                     </div>
@@ -204,7 +221,7 @@
                                 Wield the power of ancient dragon kings drawn into jade and unleashed in the form of new Sheriff, Operator, Vandal, Judge, and Melee skins.
                             </p>
                             <button id="fullscreen-button2" type="button" class="btn btn-danger">
-                                WATCH<img class="play-icon" src="https://shorturl.at/bty56" alt="play-icon">
+                                <a class="card-link" href="https://www.youtube.com/watch?v=KTIIlCjGL9k">WATCH</a>
                             </button>
                         </div>
                     </div>
@@ -218,40 +235,16 @@
                                 Wield an arsenal of cutting-edge nano-wire tech with Deadlock, the adaptive Sentinel Agent hailing from Norway.
                             </p>
                             <button id="fullscreen-button3" type="button" class="btn btn-danger">
-                                WATCH<img class="play-icon" src="https://shorturl.at/bty56" alt="play-icon">
+                                <a class="card-link" href="https://www.youtube.com/watch?v=UK7Tdob8HQw">WATCH</a>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="fullscreen-video-container">
-                <video id="fullscreen-video1" controls>
-                    <source src="videos/SUNSET%20__%20Official%20Map%20Trailer%20-%20VALORANT.mp4" type="video/mp4">
-                </video>
-                <video id="fullscreen-video2" controls>
-                    <source src="videos/RISE%20OF%20THE%20DRAGON%20KINGS%20__%20Imperium%20Skin%20Reveal%20Trailer%20-%20VALORANT.mp4" type="video/mp4">
-                </video>
-                <video id="fullscreen-video3" controls>
-                    <source src="videos/UNMADE%20__%20Episode%207%20Cinematic%20-%20VALORANT.mp4" type="video/mp4">
-                </video>
-            </div>
-
             <div class="spacing"></div>
 
             <h3 id="agents" class="heading-3">AGENTS:</h3>
-
-            <div class="dropdown-center" data-bs-theme="dark">
-                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    SORT AGENTS:
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item">Duelists</a></li>
-                    <li><a class="dropdown-item">Initiators</a></li>
-                    <li><a class="dropdown-item">Controllers</a></li>
-                    <li><a class="dropdown-item">Sentinels</a></li>
-                </ul>
-            </div>
 
             <div class="container-fluid">
                 <div id="carouselExample" class="carousel slide">
@@ -259,11 +252,9 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/yoru.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/yoru.png" alt="Yoru">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/yoru.png" alt="Yoru">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
@@ -276,11 +267,9 @@
                                             he gets the drop on each target before
                                             they know where to look.
                                         </p>
-                                        <a class = "agent-link" href = "agents/yoru.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">
-                                                LEARN MORE &rarr;
-                                            </button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -289,11 +278,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/jett.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/jett.png" alt="Jett">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/jett.png" alt="Jett">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -307,9 +294,9 @@
                                         cutting enemies before
                                         they even know what hit them.
                                     </p>
-                                    <a class = "agent-link" href = "agents/jett.html" target = "_blank">
-                                        <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                    </a>
+                                    <button type="button" class="btn btn-danger custom">
+                                        LEARN MORE &rarr;
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -317,11 +304,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/raze.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/raze.png" alt="Raze">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/raze.png" alt="Raze">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -334,9 +319,9 @@
                                         at flushing entrenched enemies and
                                         clearing tight spaces with a generous dose of "boom.
                                     </p>
-                                    <a class = "agent-link" href = "agents/raze.html" target = "_blank">
-                                        <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                    </a>
+                                    <button type="button" class="btn btn-danger custom">
+                                        LEARN MORE &rarr;
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -344,11 +329,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/phoenix.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/phoenix.png" alt="Phoenix">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/phoenix.png" alt="Phoenix">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
@@ -361,9 +344,9 @@
                                             Whether he's got backup or not, he'll rush
                                             into a fight on his own terms.
                                         </p>
-                                        <a class = "agent-link" href = "agents/phoenix.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -372,11 +355,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/neon.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/neon.png" alt="Neon">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/neon.png" alt="Neon">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
@@ -389,9 +370,9 @@
                                             catch enemies off guard, then strikes
                                             them down quicker than lightning.
                                         </p>
-                                        <a class = "agent-link" href = "agents/neon.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -400,11 +381,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/breach.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/breach.png" alt="Breach">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/breach.png" alt="Breach">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
@@ -415,9 +394,9 @@
                                             The damage and disruption he inflicts
                                             ensures no fight is ever fair.
                                         </p>
-                                        <a class = "agent-link" href = "agents/breach.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -426,11 +405,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/skye.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/skye.png" alt="Skye">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/skye.png" alt="Skye">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
@@ -442,9 +419,9 @@
                                             and her power to heal others,
                                             the team is strongest and safest by Skye’s side.
                                         </p>
-                                        <a class = "agent-link" href = "agents/skye.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -453,24 +430,22 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/gekko.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/gekko.png" alt="Gekko">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/gekko.png" alt="Gekko">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5 class="display-5">ROLE: INITIATOR</h5>
                                         <p class="agent-biography">
-                                            Gekko the Angeleno leads a tight-knit
+                                            Gekko the Angele no leads a tight-knit
                                             crew of calamitous creatures. His buddies bound forward,
                                             scattering enemies out of the way,
                                             with Gekko chasing them down to regroup and go again.
                                         </p>
-                                        <a class = "agent-link" href = "agents/gekko.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -479,11 +454,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/kayo.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/kayo.png" alt="KAY/O">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/kayo.png" alt="Kayo">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
@@ -494,9 +467,9 @@
                                             dismantles his opponents' capacity to fight back,
                                             securing him and his allies the ultimate edge.
                                         </p>
-                                        <a class = "agent-link" href = "agents/kayo.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -505,11 +478,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/fade.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/fade.png" alt="Fade">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/fade.png" alt="Fade">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
@@ -521,9 +492,9 @@
                                             she hunts targets and reveals their deepest
                                             fears—before crushing them in the dark.
                                         </p>
-                                        <a class = "agent-link" href = "agents/fade.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -532,11 +503,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/viper.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/viper.png" alt="Viper">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/viper.png" alt="Viper">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
@@ -547,9 +516,9 @@
                                             the battlefield and choke the enemy's vision.
                                             If the toxins don't kill her prey, her mindgames surely will.
                                         </p>
-                                        <a class = "agent-link" href = "agents/viper.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -558,11 +527,9 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="agents/cypher.html" target="_blank">
-                                        <div class="img-agent-class">
-                                            <img class = "img-agent" src="main-page-img/cypher.png" alt="Cypher">
-                                        </div>
-                                    </a>
+                                    <div class="img-agent-class">
+                                        <img class = "img-agent" src="main-page-img/cypher.png" alt="Cypher">
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="carousel-caption d-none d-md-block">
@@ -573,9 +540,9 @@
                                             tabs on the enemy's every move.
                                             No secret is safe. No maneuver goes unseen.
                                         </p>
-                                        <a class = "agent-link" href = "agents/cypher.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -585,9 +552,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="img-agent-class">
-                                        <a href="agents/killjoy.html" target="_blank">
-                                            <img class = "img-agent" src="main-page-img/killjoy.png" alt="Killjoy">
-                                        </a>
+                                        <img class = "img-agent" src="main-page-img/killjoy.png" alt="Killjoy">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -599,9 +564,9 @@
                                             If the damage from her gear doesn't stop her enemies,
                                             her robots' debuff will help make short work of them.
                                         </p>
-                                        <a class = "agent-link" href = "agents/killjoy.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -611,9 +576,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="img-agent-class">
-                                        <a href="agents/astra.html" target="_blank">
-                                            <img class = "img-agent" src="main-page-img/astra.png" alt="Astra">
-                                        </a>
+                                        <img class = "img-agent" src="main-page-img/astra.png" alt="Astra">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -626,9 +589,9 @@
                                             strategic foresight, she's always eons ahead
                                             of her enemy's next move.
                                         </p>
-                                        <a class = "agent-link" href = "agents/astra.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -638,9 +601,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="img-agent-class">
-                                        <a href="agents/chamber.html" target="_blank">
-                                            <img class = "img-agent" src="main-page-img/chamber.png" alt="Chamber">
-                                        </a>
+                                        <img class = "img-agent" src="main-page-img/chamber.png" alt="Chamber">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -653,9 +614,9 @@
                                             line and pick off enemies from afar,
                                             with a contingency built for every plan.
                                         </p>
-                                        <a class = "agent-link" href = "agents/chamber.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -665,9 +626,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="img-agent-class">
-                                        <a href="agents/harbor.html" target="_blank">
-                                            <img class = "img-agent" src="main-page-img/harbor.png" alt="Harbor">
-                                        </a>
+                                        <img class = "img-agent" src="main-page-img/harbor.png" alt="Harbor">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -679,9 +638,9 @@
                                             He unleashes frothing rapids and crushing waves to
                                             shield his allies, or pummel those that oppose him.
                                         </p>
-                                        <a class = "agent-link" href = "agents/harbor.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -691,9 +650,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="img-agent-class">
-                                        <a href="agents/deadlock.html" target="_blank">
-                                            <img class = "img-agent" src="main-page-img/deadlock.png" alt="Deadlock">
-                                        </a>
+                                        <img class = "img-agent" src="main-page-img/deadlock.png" alt="Deadlock">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -706,9 +663,9 @@
                                             No one escapes her vigilant watch,
                                             nor survives her unyielding ferocity.
                                         </p>
-                                        <a class = "agent-link" href = "agents/deadlock.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -718,9 +675,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="img-agent-class">
-                                        <a href="agents/brimstone.html" target="_blank">
-                                            <img class = "img-agent" src="main-page-img/brimstone.png" alt="Brimstone">
-                                        </a>
+                                        <img class = "img-agent" src="main-page-img/brimstone.png" alt="Brimstone">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -732,9 +687,9 @@
                                             His ability to deliver utility precisely and
                                             safely make him the unmatched boots-on-the-ground commander.
                                         </p>
-                                        <a class = "agent-link" href = "agents/brimstone.html" target = "_blank">
-                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger custom">
+                                            LEARN MORE &rarr;
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -911,25 +866,7 @@
 
         <div class="spacing"></div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-3 col-lg-3">
-                    <p class="p-timer">The new season starts in:</p>
-                </div>
-                <div class="col-12 col-md-9 col-lg-9">
-                    <div class="countdown" id="countdown">
-                        <span class="time">00</span>
-                        <span class="time">00</span>
-                        <span class="time">00</span>
-                        <span class="time">00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <footer class="footer_panel">
-            <img class="age-limit" src="https://shorturl.at/nAJNY" alt="age-limit">
-            <div class="alert alert-danger">Only children over 12 years old</div>
             <p>You can leave a review about the site here:</p>
             <form id="feedbackForm">
                 <label for="feedback"></label><input id="feedback" name="feedback">
